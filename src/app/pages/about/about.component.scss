@@ -1,0 +1,97 @@
+.wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 60px;
+  background-color: white;
+}
+.parallax-code-img {
+  width: 100%;
+  background-image: url('../../../assets/img/about/code.jpg');
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-size: 90% 100%;
+}
+
+.gaming {
+  width: 100%;
+  background-image: url('../../../assets/img/about/gaming.jpg');
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+}
+
+.gaming img {
+  width: 100%;
+  max-height: 20rem;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.profile img{
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.info hr {
+  width: 100%;
+}
+
+.parallax-code-img img {
+  width: 100%;
+  max-height: 20rem;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.info p {
+  width: 50%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer {
+  height: 30rem;
+}
+
+.left {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 3em;
+}
+.right {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 100%;
+  padding: 3em;
+  text-align: center;
+}
+
+.right img {
+  width: 400px;
+}

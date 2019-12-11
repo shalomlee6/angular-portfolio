@@ -1,0 +1,25 @@
+{
+    
+    "id": 1,
+    "title": "Web Development",
+    "img":  "../../assets/img/webdev.jpg",
+    "tags": "#Angular #React #Node.js #Html #Css #Javascript #Typescript #Php",
+    "sub":  {
+        "projects": [
+            {
+                "title": "Face-Afeka",
+                "description": "A Social Network site based on facebook, where every user can sign-in using a secure encryption Sign-in methode.\n Each POST can be Tagged Private or Public, and every user can search for other friends that signed in to Face-Afeka.\n All POSTS are sorted by the date and time they were uploded, and only people who are friends can Tag each other.",
+                "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vTXt9ibIH-FBP7p_zRxifwb_RbZLbp-lYV0AKLt0gDESSH0rb18WQ28jSWUjXoTAA-G6SNfSa0J-pac/embed?start=false&amp;loop=false&amp;delayms=3000",
+                "img": [],
+                "ico": {
+                    "html": "<i class='fab fa-html5 fa-3x' id='html'></i>",
+                    "css":  "<i class='fab fa-css3-alt fa-3x' id='css'></i>",
+                    "php":  "<i class='fab fa-php fa-3x' id='php'></i>",
+                    "git":  "<i class='fab fa-github-square fa-3x'></i>"
+                },
+                "tags": ""
+            }
+        ]
+    }
+    
+}

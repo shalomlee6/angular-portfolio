@@ -1,0 +1,361 @@
+<div
+  class="project-wrapper"
+  [ngStyle]="{ backgroundImage: getBackgroundImageUrl() }"
+  [style.height]="project.id === 1 ? 'fit-content' : '100%'"
+>
+  <div class="timeline" *ngIf="project.id === 1"></div>
+
+  <div class="main-timeline" *ngIf="project.id === 1">
+    <div class="web-dev-top">
+      <div class="web-dev-top-tittle">
+        <h1>{{ project.title }}</h1>
+        <h4>{{ project.tags }}</h4>
+      </div>
+    </div>
+
+    <!-- Project 1 -->
+    <hr />
+    <div class="container">
+      <div class="left">
+        <h2>{{ project.sub.projects[0].title }}</h2>
+        <p>{{ project.sub.projects[0].description }}</p>
+        <br />
+        <div class="tags">
+          <a
+            ><i
+              class="fab fa-html5 fa-3x"
+              id="html"
+              [style.color]="'#FF4500'"
+            ></i
+            >Html</a
+          >
+          <a
+            ><i
+              class="fab fa-css3-alt fa-3x"
+              id="css"
+              [style.color]="'#00BFFF'"
+            ></i
+            >Css</a
+          >
+          <a><img [src]="project.sub.projects[2].img[1]" alt="" />Typescript</a>
+          <a
+            ><i class="fab fa-angular fa-3x" [style.color]="'#eb2641'"></i
+            >Angular 8</a
+          >
+          <a href="https://github.com/shalomlee6/angular-8-weather-app.git"
+            ><i class="fab fa-github-square fa-3x"></i>Project Repository</a
+          >
+        </div>
+      </div>
+
+      <div class="right">
+        <img
+          [src]="project.sub.projects[0].img[0]"
+          alt=""
+          [style.width]="'700px'"
+          [style.height]="'400px'"
+        />
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <hr />
+    <div class="container">
+      <div class="left">
+        <h2>{{ project.sub.projects[1].title }}</h2>
+        <p>{{ project.sub.projects[1].description }}</p>
+
+        <div class="tags">
+          <a
+            ><i
+              class="fab fa-html5 fa-3x"
+              id="html"
+              [style.color]="'#FF4500'"
+            ></i
+            >Html</a
+          >
+          <a
+            ><i
+              class="fab fa-css3-alt fa-3x"
+              id="css"
+              [style.color]="'#00BFFF'"
+            ></i
+            >Css</a
+          >
+          <a
+            ><i class="fab fa-js fa-3x" [style.color]="'#FFFF00'"></i>Vanilla
+            Javascript</a
+          >
+          <a
+            ><i class="fab fa-node fa-3x" [style.color]="'#7CFC00'"></i
+            >Node.js</a
+          >
+          <a href="https://github.com/shalomlee6/Bank-System.git"
+            ><i class="fab fa-github-square fa-3x"></i>Project Repository</a
+          >
+        </div>
+      </div>
+
+      <div class="right">
+        <img
+          [src]="project.sub.projects[1].img[0]"
+          alt=""
+          [style.width]="'700px'"
+          [style.height]="'400px'"
+        />
+      </div>
+    </div>
+    <!-- Project 4 -->
+    <hr />
+    <div class="container">
+      <div class="left">
+        <h2>{{ project.sub.projects[3].title }}</h2>
+        <p>{{ project.sub.projects[3].description }}</p>
+        <br />
+        <p [style.color]="'#FFFFFF'">
+          Click Here For The
+          <a href="https://shalomlee6.github.io/myPortfolio/">Live Demo</a>
+        </p>
+        <br />
+        <br />
+        <div class="tags">
+          <a
+            ><i
+              class="fab fa-html5 fa-3x"
+              id="html"
+              [style.color]="'#FF4500'"
+            ></i
+            >Html</a
+          >
+          <a
+            ><i
+              class="fab fa-css3-alt fa-3x"
+              id="css"
+              [style.color]="'#00BFFF'"
+            ></i
+            >Css</a
+          >
+          <a
+            ><i class="fab fa-js fa-3x" [style.color]="'#FFFF00'"></i
+            >Javascript</a
+          >
+          <a href="https://github.com/shalomlee6/myPortfolio.git"
+            ><i class="fab fa-github-square fa-3x"></i>Project Repository</a
+          >
+        </div>
+      </div>
+      <div class="right">
+        <img [src]="project.sub.projects[3].img[0]" alt="" />
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <hr />
+    <div class="container">
+      <div class="left">
+        <h2>{{ project.sub.projects[2].title }}</h2>
+        <p>{{ project.sub.projects[2].description }}</p>
+
+        <div class="tags">
+          <a
+            ><i
+              class="fab fa-html5 fa-3x"
+              id="html"
+              [style.color]="'#FF4500'"
+            ></i
+            >Html</a
+          >
+          <a
+            ><i
+              class="fab fa-css3-alt fa-3x"
+              id="css"
+              [style.color]="'#00BFFF'"
+            ></i
+            >Css</a
+          >
+          <a><img [src]="project.sub.projects[2].img[1]" alt="" />Typescript</a>
+          <a
+            ><i class="fab fa-react fa-3x" [style.color]="'#4169E1'"></i
+            >React</a
+          >
+          <a href="https://github.com/shalomlee6/Bank-System.git"
+            ><i class="fab fa-github-square fa-3x"></i>Project Repository</a
+          >
+        </div>
+      </div>
+      <div class="right">
+        <img [src]="project.sub.projects[2].img[0]" alt="" />
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <hr />
+    <div class="container">
+      <div class="left">
+        <h2>{{ project.sub.projects[4].title }}</h2>
+        <p>{{ project.sub.projects[4].description }}</p>
+        <div class="tags">
+          <a
+            ><i
+              class="fab fa-html5 fa-3x"
+              id="html"
+              [style.color]="'#FF4500'"
+            ></i
+            >Html</a
+          >
+          <a
+            ><i
+              class="fab fa-css3-alt fa-3x"
+              id="css"
+              [style.color]="'#00BFFF'"
+            ></i
+            >Css</a
+          >
+          <a
+            ><i class="fab fa-js fa-3x" [style.color]="'#FFFF00'"></i
+            >Javascript</a
+          >
+          <a href="https://github.com/shalomlee6/myPortfolio.git"
+            ><i class="fab fa-github-square fa-3x"></i>Project Repository</a
+          >
+        </div>
+      </div>
+      <div class="right">
+        <img [src]="project.sub.projects[4].img[0]" alt="" />
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <div class="game-dev" *ngIf="project.id === 2">
+    <!-- top -->
+    <div class="top">
+      <h1>{{ project.title }}</h1>
+    </div>
+
+    <!-- middle -->
+    <div class="mid">
+      <div class="container">
+        <div class="left" id="game-dev-title">
+          <h2>{{ project.sub.projects[0].title }}</h2>
+          <p>{{ project.sub.projects[0].description }}</p>
+        </div>
+        <div class="right">
+          <iframe
+            [src]="safeSrc"
+            width="60%"
+            height="100%"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+          <div class="tags">
+            <img id="unity" src="../../../assets/img/unity.png" alt="" />
+            <img id="unity" src="../../../assets/img/c.png" alt="" />
+            <a href="https://github.com/shalomlee6/Bank-System.git"
+              ><i class="fab fa-github-square fa-3x"></i>Project Repository</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom -->
+    <div class="bottom">
+      <div class="road">
+        <img
+          class="mario"
+          src="../../../assets/img/game-dev/mario.png"
+          alt=""
+        />
+        <img
+          class="luigi"
+          src="../../../assets/img/game-dev/luigi.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="android" *ngIf="project.id === 3">
+    <div id="div1">
+      <h1>{{ project.title }}</h1>
+      <h2>{{ project.sub.projects[0].title }}</h2>
+      <p>{{ project.sub.projects[0].description }}</p>
+    </div>
+
+    <div id="div2" (click)="onClick()">
+      <slideshow
+        [backgroundSize]="'20%'"
+        [height]="'250px'"
+        [minHeight]="'450px'"
+        [autoPlay]="false"
+        [showArrows]="true"
+        [showDots]="true"
+        [imageUrls]="androidImages"
+        [lazyLoad]="androidImages?.length > 1"
+        [autoPlayWaitForLazyLoad]="true"
+      >
+      </slideshow>
+    </div>
+
+    <div id="div3"></div>
+
+    <div id="div4">
+      <iframe
+        width="80%"
+        height="100%"
+        src="https://docs.google.com/presentation/d/e/2PACX-1vTqG-X8TEWfJtD3bDEU1F8Sarfh8jvDU2FosTv-d-aCcsYVLUlIFZvqG__v-Eri8QvzPQrAa0b59lEV/embed?start=false&loop=false&delayms=3000"
+        frameborder="0"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    </div>
+  </div>
+
+  <div class="ios" *ngIf="project.id === 4">
+    <div class="ios-top">
+      <div class="ios-top-left">
+        <h1>{{ project.title }}</h1>
+        <h2>{{ project.sub.projects[0].title }}</h2>
+        <p>{{ project.sub.projects[0].description }}</p>
+      </div>
+
+      <div class="ios-top-right">
+        <slideshow
+          [backgroundSize]="'20%'"
+          [height]="'25rem'"
+          [autoPlay]="false"
+          [showArrows]="true"
+          [showDots]="true"
+          [imageUrls]="iosImages"
+          [lazyLoad]="iosImages?.length > 1"
+          [autoPlayWaitForLazyLoad]="true"
+        >
+        </slideshow>
+      </div>
+    </div>
+
+    <div class="ios-bottom">
+      <div class="ios-bottom-left">
+        <div class="tags">
+          <a><i class="fab fa-apple fa-3x" [style.color]="'white'"></i>Ios</a>
+          <a><img [src]="project.sub.projects[0].img[0]" alt="" />Firebase</a>
+          <a ><i class="fas fa-database fa-3x" [style.color]="'#26fa7c'"></i>Core Data</a>
+          <a ><i class="fab fa-swift fa-3x" [style.color]="'yellow'"></i>Swift</a>
+          <a href="https://justpaste.it/redirect/2jti4/https://github.com/shalomlee6/word-swipe.git"><i class="fab fa-github-square fa-3x"></i>Project Repository</a>
+        </div>
+      </div>
+
+      <div class="ios-bottom-right">
+        <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vRaE2cAQ09tGr_u501zvx3joH2W4oe61mEHJyUnYo2tQnEDuYyO_HxxOFGM8_-FwVkk6PG0IOIbCJpy/embed?start=false&amp;loop=false&amp;delayms=3000"
+          frameborder="0"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>

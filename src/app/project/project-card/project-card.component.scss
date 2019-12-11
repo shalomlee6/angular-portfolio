@@ -1,0 +1,27 @@
+img{
+    max-width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.project-card {
+    width: fit-content;
+    height: fit-content;
+    max-width: 350px;
+    
+    text-align: center;
+    
+}
+
+.mat-card-actions {
+    padding: 0;
+}
+.test {
+
+    
+    width: 200px;
+    height: 200px;
+    // background-color: #FFF;
+    background-color: transparent;
+   
+}
